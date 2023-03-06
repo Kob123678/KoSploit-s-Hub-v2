@@ -86,5 +86,3 @@ end)
 window:GreenButton(function()
    print("You clicked the green button!")
 end)
-
-sectionA:Select()
