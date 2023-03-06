@@ -49,6 +49,40 @@ Pirates:Button("Pilfering Pirates", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/jAwucGJ6"))()
 end)
 
+-- Brookhaven
+
+local Brook = window:Section("Brookhaven")
+
+Brook:Divider("Script by Kob")
+
+Brook:Button("Ice Hub (Very OP)", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+end)
+
+-- Build a boat
+
+local BABFT = window:Section("BABFT")
+
+BABFT:Divider("Auto Farm Script by Exy#7456")
+
+BABFT:Button("Fast Auto Farm", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ExyXyz/ExyGantenk/main/ExyBABFT"))()
+end)
+
+BABFT:Label("Auto Build")
+
+BABFT:Button("Auto Build Script", function()
+   loadstring(game:HttpGet(("https://raw.githubusercontent.com/VertigoCool99/Script/main/BuildABoat/BuildABoatRestored.lua"),true))()
+end)
+
+BABFT:Button("Builds File Discord Server", function()
+   game.StarterGui:SetCore("SendNotification", {Title = "Copied!", Text = "Link Successfully copied!", Icon = "", Duration = 4})
+    wait(1)
+    setclipboard("https://discord.gg/xN6yuz47")
+end)
+
+-- Green Button
+
 window:GreenButton(function()
    print("You clicked the green button!")
 end)
