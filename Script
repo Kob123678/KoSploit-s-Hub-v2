@@ -81,10 +81,20 @@ BABFT:Button("Builds File Discord Server", function()
     setclipboard("https://discord.gg/xN6yuz47")
 end)
 
+-- Doors
+
+local doors = window:Section("Pilfering Pirates")
+
+doors:Divider("Script by RegularVynixu#8039")
+
+doors:Button("Vynixius Hub", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
+end)
+
 -- Green Button
 
 window:GreenButton(function()
    print("You clicked the green button!")
 end)
 
-Toggle:Select()
+sectionA:Select()
