@@ -86,3 +86,5 @@ end)
 window:GreenButton(function()
    print("You clicked the green button!")
 end)
+
+Toggle:Select()
