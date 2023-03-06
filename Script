@@ -53,7 +53,7 @@ end)
 
 local Brook = window:Section("Brookhaven")
 
-Brook:Divider("Script by Kob")
+Brook:Divider("Script by Icy#4444 And nillest#3135")
 
 Brook:Button("Ice Hub (Very OP)", function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
