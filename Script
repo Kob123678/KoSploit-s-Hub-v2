@@ -43,7 +43,9 @@ window:Divider("Scripts!")
 
 local Pirates = window:Section("Pilfering Pirates")
 
-Pirates:Divider("Script by Kob")
+Pirates:Divider("Pilfering Pirates")
+
+Pirates:Label("Script by Kob")
 
 Pirates:Button("Pilfering Pirates", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/jAwucGJ6"))()
@@ -53,7 +55,9 @@ end)
 
 local Brook = window:Section("Brookhaven")
 
-Brook:Divider("Script by Icy#4444 And nillest#3135")
+Brook:Divider("Brookhaven 🏡RP")
+
+Brook:Label("Script by Icy#4444 And nillest#3135")
 
 Brook:Button("Ice Hub (Very OP)", function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
@@ -63,7 +67,9 @@ end)
 
 local BABFT = window:Section("BABFT")
 
-BABFT:Divider("Auto Farm Script by Exy#7456")
+BABFT:Divider("Build A Boat For Treasure")
+
+BABFT:Label("Auto Farm Script by Exy#7456")
 
 BABFT:Button("Fast Auto Farm", function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/ExyXyz/ExyGantenk/main/ExyBABFT"))()
@@ -81,11 +87,25 @@ BABFT:Button("Builds File Discord Server", function()
     setclipboard("https://discord.gg/xN6yuz47")
 end)
 
+-- Mad City Chapter 2
+
+local MCity = window:Section("Mad City 2")
+
+MCity:Divider("Mad City: Chapter 2")
+
+MCity:Label("Script By Deni")
+
+MCity:Button("Ruby Hub", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Deni210/madcity/main/Ruby%20Hub%20Chapter%202", true))()
+end)
+
 -- Doors
 
-local doors = window:Section("DOORS 👁️")
+local doors = window:Section("Doors")
 
-doors:Divider("Script by RegularVynixu#8039")
+doors:Divider("DOORS 👁️")
+
+doors:Label("Script by RegularVynixu#8039")
 
 doors:Button("Vynixius Hub", function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
