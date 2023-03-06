@@ -83,7 +83,7 @@ end)
 
 -- Doors
 
-local doors = window:Section("Pilfering Pirates")
+local doors = window:Section("DOORS 👁️")
 
 doors:Divider("Script by RegularVynixu#8039")
 
