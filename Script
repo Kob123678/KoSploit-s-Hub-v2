@@ -13,7 +13,7 @@ Toggle:Divider("Toggle UI")
 
 Toggle:Button("Keybinds", function() window:Notify("Hello!", "Use LeftAlt to toggle UI", "Ok!", "rbxassetid://12608259004",
    function()
-       print(1)
+       print("Pressed!")
    end)
 end)
 
@@ -35,8 +35,16 @@ sectionA:Button("Server Hop (Join Lowest Player Server)", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/ZRpw2BDy"))()
 end)
 
+-- Credit
 
+local CD = window:Section("Credits")
 
+CD:Divider("Credits!!")
+
+CD:Label("Made by Kob")
+CD:Label("UI Library: Apple Library")
+
+-- Scripts
 window:Divider("Scripts!")
 
 -- Pilfering Pirates
@@ -75,6 +83,7 @@ BABFT:Button("Fast Auto Farm", function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/ExyXyz/ExyGantenk/main/ExyBABFT"))()
 end)
 
+BABFT:Label(" ")
 BABFT:Label("Auto Build")
 
 BABFT:Button("Auto Build Script", function()
@@ -85,6 +94,31 @@ BABFT:Button("Builds File Discord Server", function()
    game.StarterGui:SetCore("SendNotification", {Title = "Copied!", Text = "Link Successfully copied!", Icon = "", Duration = 4})
     wait(1)
     setclipboard("https://discord.gg/xN6yuz47")
+end)
+
+-- Blox fruit
+
+local BF = window:Section("Blox Fruits")
+
+BF:Divider("Blox Fruits")
+
+BF:Label("Makima Hub By Piwwy0909")
+
+BF:Button("Makima Hub", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/Piwwy0909/MakimaRemake/main/Cumback.Makima'))()
+end)
+
+BF:Label(" ")
+BF:Label("Hoho Hub By acsu123")
+
+BF:Button("Hoho Hub", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end)
+
+BF:Button("Hoho Hub Discord Server", function()
+   game.StarterGui:SetCore("SendNotification", {Title = "Copied!", Text = "Link Successfully copied!", Icon = "", Duration = 4})
+    wait(1)
+    setclipboard("https://discord.gg/hohohub")
 end)
 
 -- Mad City Chapter 2
@@ -117,4 +151,4 @@ window:GreenButton(function()
    print("You clicked the green button!")
 end)
 
-sectionA:Select()
+CD:Select()
