@@ -47,6 +47,18 @@ CD:Label("UI Library: Apple Library")
 -- Scripts
 window:Divider("Scripts!")
 
+-- Epic Minigames
+
+local Game = window:Section("Epic Minigames")
+
+Game:Divider("Epic Minigames")
+
+Game:Label("Script by SlamminPig")
+
+Game:Button("Cheat Round Script", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/SlamminPig/rblxgames/main/Epic%20Minigames/EpicMinigamesGUI"))()
+end)
+
 -- Pilfering Pirates
 
 local Pirates = window:Section("Pilfering Pirates")
