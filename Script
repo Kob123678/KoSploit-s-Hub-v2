@@ -1,9 +1,63 @@
 local library = loadstring(game:HttpGet("https://github.com/GoHamza/AppleLibrary/blob/main/main.lua?raw=true"))()
 
 
-local window = library:init("KoSploit v2 (MacOS Editon)", true, Enum.KeyCode.LeftAlt, true)
+local window = library:init("KoSploit v2.1 (MacOS Editon)", true, Enum.KeyCode.LeftAlt, true)
 
 window:Divider("Main Menu!")
+
+-- Fpsunlocker
+
+local fps = window:Section("FPS Unlocker")
+
+fps:Divider("FPS Unlocker")
+
+fps:Button("Set FPS Cap: infinite", function()
+   setfpscap(99999999)
+end)
+
+fps:Button("Set FPS Cap: 360", function()
+   setfpscap(360)
+end)
+
+fps:Button("Set FPS Cap: 240", function()
+   setfpscap(240)
+end)
+
+fps:Button("Set FPS Cap: 165", function()
+   setfpscap(165)
+end)
+
+fps:Button("Set FPS Cap: 144", function()
+   setfpscap(144)
+end)
+
+fps:Button("Set FPS Cap: 120", function()
+   setfpscap(120)
+end)
+
+fps:Button("Set FPS Cap: 75", function()
+   setfpscap(75)
+end)
+
+fps:Button("Set FPS Cap: 60", function()
+   setfpscap(60)
+end)
+
+fps:Button("Set FPS Cap: 30", function()
+   setfpscap(30)
+end)
+
+-- Change logs
+
+local UD = window:Section("Change logs")
+
+UD:Divider("What News!!")
+
+UD:Label("Added Epic Minigames Tab")
+UD:Label("Added FPS Unlocker Tab")
+UD:Label("Added Admin Scripts Tab")
+UD:Label("Added Change logs Tab")
+UD:Label("Added Support Me (Go Check Credits Tab)")
 
 -- Toggle UI
 
@@ -44,8 +98,43 @@ CD:Divider("Credits!!")
 CD:Label("Made by Kob")
 CD:Label("UI Library: Apple Library")
 
+CD:Divider("Support")
+CD:Label("DM Me On Discord")
+CD:Label("My Username: AltKob#1341")
+CD:Button("Join My Discord Server", function()
+   game.StarterGui:SetCore("SendNotification", {Title = "Copied!", Text = "Link Successfully copied!", Icon = "", Duration = 4})
+    wait(1)
+    setclipboard("https://discord.gg/nTcYCMQk")
+end)
+
 -- Scripts
 window:Divider("Scripts!")
+
+-- Best Admin Script
+
+local AM = window:Section("Admin Scripts")
+
+AM:Divider("Top best admin script")
+
+AM:Button("Fates Admin (Top 1)", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+end)
+
+AM:Button("Infinite Yield (Top 2)", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+AM:Button("CMD - X (Top 3)", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
+end)
+
+AM:Button("ShatterVast Admin (Top 4)", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/Pfe7dei1"))();
+end)
+
+AM:Button("Reviz Admin (Top 5)", function()
+   loadstring(game:HttpGet(('https://pastebin.com/raw/RqaZUrBZ'),true))()
+end)
 
 -- Epic Minigames
 
