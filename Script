@@ -1,7 +1,7 @@
 local library = loadstring(game:HttpGet("https://github.com/GoHamza/AppleLibrary/blob/main/main.lua?raw=true"))()
 
 
-local window = library:init("KoSploit v2.2 (MacOS Editon)", true, Enum.KeyCode.LeftAlt, true)
+local window = library:init("KoSploit v2.3 (MacOS Editon)", true, Enum.KeyCode.LeftAlt, true)
 
 window:Divider("Main Menu!")
 
@@ -51,10 +51,9 @@ end)
 
 local UD = window:Section("Change logs")
 
-UD:Divider("Updates 2.2")
+UD:Divider("Updates 2.3")
 
-UD:Label("Removed Set fps cap inf")
-UD:Label("Added Set fps cap: 1400 Button")
+UD:Label("Added Void Hub in blox fruit")
 
 -- Toggle UI
 
@@ -209,7 +208,7 @@ end)
 BF:Label(" ")
 BF:Label("Hoho Hub By acsu123")
 
-BF:Button("Hoho Hub", function()
+BF:Button("Hoho Hub (Have Key But Very Good)", function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
 end)
 
@@ -217,6 +216,13 @@ BF:Button("Hoho Hub Discord Server", function()
    game.StarterGui:SetCore("SendNotification", {Title = "Copied!", Text = "Link Successfully copied!", Icon = "", Duration = 4})
     wait(1)
     setclipboard("https://discord.gg/hohohub")
+end)
+
+BF:Label(" ")
+BF:Label("Void Hub By Efe0626")
+
+BF:Button("Void Hub (Have Key But Best)", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/VoidHub/main/Script"))()
 end)
 
 -- Mad City Chapter 2
