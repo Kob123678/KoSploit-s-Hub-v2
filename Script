@@ -1,7 +1,7 @@
 local library = loadstring(game:HttpGet("https://github.com/GoHamza/AppleLibrary/blob/main/main.lua?raw=true"))()
 
 
-local window = library:init("KoSploit v2.3 (MacOS Editon)", true, Enum.KeyCode.LeftAlt, true)
+local window = library:init("KoSploit v2.4 (MacOS Editon)", true, Enum.KeyCode.LeftAlt, true)
 
 window:Divider("Main Menu!")
 
@@ -51,9 +51,10 @@ end)
 
 local UD = window:Section("Change logs")
 
-UD:Divider("Updates 2.3")
+UD:Divider("Updates 2.4")
 
-UD:Label("Added Void Hub in blox fruit")
+UD:Label("Added Pet Sim X")
+UD:Label("Added My Restaurant!")
 
 -- Toggle UI
 
@@ -247,6 +248,30 @@ doors:Label("Script by RegularVynixu#8039")
 
 doors:Button("Vynixius Hub", function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
+end)
+
+-- My Restaurant!
+
+local MRS = window:Section("My Restaurant!")
+
+MRS:Divider("My Restaurant!")
+
+MRS:Label("Script by (MilkUp Community)")
+
+MRS:Button("My Restaurant Script!", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/uBpUr2vU"))()
+end)
+
+-- Pet Sim X
+
+local PSX = window:Section("Pet Sim X")
+
+PSX:Divider("Pet Simulator X!")
+
+PSX:Label("Script by Blacktrap (i think)")
+
+PSX:Button("Blacktrap Hub", function()
+   loadstring(game:HttpGetAsync("https://blacktrap.org/blacktrap/users/checkpoint/Auth.txt"))()
 end)
 
 -- Green Button
