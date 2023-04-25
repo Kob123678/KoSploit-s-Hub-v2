@@ -11,8 +11,8 @@ local fps = window:Section("FPS Unlocker")
 
 fps:Divider("FPS Unlocker")
 
-fps:Button("Set FPS Cap: 1400", function()
-   setfpscap(1400)
+fps:Button("Set FPS Cap: 6100", function()
+   setfpscap(6100)
 end)
 
 fps:Button("Set FPS Cap: 360", function()
