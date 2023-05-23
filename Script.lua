@@ -1,7 +1,7 @@
 local library = loadstring(game:HttpGet("https://github.com/GoHamza/AppleLibrary/blob/main/main.lua?raw=true"))()
 
 
-local window = library:init("KoSploit v2.5 (MacOS Editon)", true, Enum.KeyCode.LeftAlt, true)
+local window = library:init("KoSploit v2.6 (MacOS Editon)", true, Enum.KeyCode.Delete, true)
 
 window:Divider("Main Menu!")
 
@@ -51,9 +51,11 @@ end)
 
 local UD = window:Section("Change logs")
 
-UD:Divider("Updates 2.5")
+UD:Divider("Updates 2.6")
 
-UD:Label("Added Copy Game Link")
+UD:Label("Added Break In")
+UD:Label("Updated Discord Invite Link")
+UD:Label("Changed Toggle UI Button to Delete Button")
 
 -- Toggle UI
 
@@ -61,7 +63,7 @@ local Toggle = window:Section("Toggle UI")
 
 Toggle:Divider("Toggle UI")
 
-Toggle:Button("Keybinds", function() window:Notify("Hello!", "Use LeftAlt to toggle UI", "Ok!", "rbxassetid://12608259004",
+Toggle:Button("Keybinds", function() window:Notify("Hello!", "Use Delete Button to toggle UI", "Ok!", "rbxassetid://12608259004",
    function()
        print("Pressed!")
    end)
@@ -100,10 +102,11 @@ CD:Label("My Username: AltKob#1341")
 CD:Button("Join My Discord Server", function()
    game.StarterGui:SetCore("SendNotification", {Title = "Copied!", Text = "Link Successfully copied!", Icon = "", Duration = 4})
     wait(1)
-    setclipboard("https://discord.gg/nTcYCMQk")
+    setclipboard("https://discord.gg/kaCAFDCv")
 end)
 
 -- Scripts
+
 window:Divider("Scripts!")
 
 -- Best Admin Script
@@ -262,6 +265,27 @@ BF:Button("Click Me!", function()
    wait()
     setclipboard("https://www.roblox.com/games/2753915549/Blox-Fruits")
 end)
+
+-- Break In
+
+local BreakIn = window:Section("Break In")
+
+BreakIn:Divider("Break In (Story)")
+
+BreakIn:Label("Script By Kob")
+
+BreakIn:Button("KoSploit's Hub", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Kob123678/Scripts/main/BreakIn.lua", true))()
+end)
+
+BreakIn:Label("")
+BreakIn:Label("Copy Game Link")
+BreakIn:Button("Click Me!", function()
+   window:TempNotify("Break In", "Link Successfully copied!", "rbxassetid://12608259004")
+   wait()
+    setclipboard("https://www.roblox.com/games/3851622790/Break-In-Story")
+end)
+
 -- Mad City Chapter 2
 
 local MCity = window:Section("Mad City 2")
