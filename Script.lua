@@ -1,7 +1,7 @@
 local library = loadstring(game:HttpGet("https://github.com/GoHamza/AppleLibrary/blob/main/main.lua?raw=true"))()
 
 
-local window = library:init("KoSploit v2.6 (MacOS Editon)", true, Enum.KeyCode.Delete, true)
+local window = library:init("KoSploit v2.7 (MacOS Editon)", true, Enum.KeyCode.Delete, true)
 
 window:Divider("Main Menu!")
 
@@ -51,11 +51,9 @@ end)
 
 local UD = window:Section("Change logs")
 
-UD:Divider("Updates 2.6")
+UD:Divider("Updates 2.7")
 
-UD:Label("Added Break In")
-UD:Label("Updated Discord Invite Link")
-UD:Label("Changed Toggle UI Button to Delete Button")
+UD:Label("Added Hotel Elephant")
 
 -- Toggle UI
 
@@ -154,6 +152,34 @@ Game:Button("Click Me!", function()
    wait()
     setclipboard("https://www.roblox.com/games/277751860/Epic-Minigames")
 end)
+
+-- Pilfering Pirates
+
+local HoEL = window:Section("Hotel Elephant")
+
+HoEL:Divider("Hotel Elephant")
+
+HoEL:Label("KoSploit Hub by Kob")
+
+HoEL:Button("KoSploit Hub", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Kob123678/Scripts/main/Hotel%20Elephant.lua"))()
+end)
+
+HoEL:Label(" ")
+HoEL:Label("ZazaSploit by FindingStuff")
+
+HoEL:Button("ZazaSploit", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Kob123678/Scripts/main/ZazaSploit.lua"))()
+end)
+
+HoEL:Label("")
+HoEL:Label("Copy Game Link")
+HoEL:Button("Click Me!", function()
+   window:TempNotify("Pilfering Pirates", "Link Successfully copied!", "rbxassetid://12608259004")
+   wait()
+    setclipboard("https://www.roblox.com/games/23578803/Hotel-Elephant")
+end)
+
 
 -- Pilfering Pirates
 
