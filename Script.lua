@@ -153,7 +153,7 @@ Game:Button("Click Me!", function()
     setclipboard("https://www.roblox.com/games/277751860/Epic-Minigames")
 end)
 
--- Pilfering Pirates
+-- Hotel Elephant
 
 local HoEL = window:Section("Hotel Elephant")
 
@@ -175,7 +175,7 @@ end)
 HoEL:Label("")
 HoEL:Label("Copy Game Link")
 HoEL:Button("Click Me!", function()
-   window:TempNotify("Pilfering Pirates", "Link Successfully copied!", "rbxassetid://12608259004")
+   window:TempNotify("Hotel Elephant", "Link Successfully copied!", "rbxassetid://12608259004")
    wait()
     setclipboard("https://www.roblox.com/games/23578803/Hotel-Elephant")
 end)
